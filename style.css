@@ -1,0 +1,70 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #06213b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 1px;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.cell1{
+    border-left: 2px solid #ffb623;
+    border-right: 2px solid #ffb623;
+}
+.cell2{
+    border-top: 2px solid #ffb623;
+    border-bottom: 2px solid #ffb623;
+}
+.cell3{
+    border: 2px solid #ffb623;
+}
+
+.cell:hover {
+    background-color: #f4f2f820;
+}
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+}
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
